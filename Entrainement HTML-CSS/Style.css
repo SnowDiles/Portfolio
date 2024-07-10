@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(100, 190, 100);
+  z-index: 100;
+  height: 100px;
+  padding-right: 200px;
+}
+
+.logo {
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin-left: 30px;
+  margin-top: 50vh;
+  font-size: 20px;
+}
+
+.navbar {
+  margin-top: 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+
+.bannieres_accueil{
+  position: relative;
+}
+.bannieres_accueil img{
+ max-width: 100%;
+ height: auto;
+}
+
+.bannieres_texte{
+  position:absolute;
+  top:0;
+  font-size: 50px;
+  padding: 20%;
+  text-align: center;
+  color: white;
+ }
+
+
+.bannieres_texte :hover{
+
+  color: rgb(100, 190, 100) ;
+
+}
+
+
+.bannieres_button a{
+
+    background-color: rgb(100, 190, 100);
+    text-decoration: none;
+    font-size:40px;
+    padding: 20px;
+    border-radius: 2rem;
+    color: white;
+    position: absolute;
+    top: 58%;
+    right: 43%;
+}
+
+@keyframes bounce{
+
+  0%{
+
+    transform: translateX(-240px);
+
+  }
+
+  50%{
+    transform: translateX(-180px);
+
+  }
+
+
+  70%{
+
+    transform: translateX(-240px);
+
+  }
+
+  90%{
+
+    transform: translateX(-200px);
+
+  }
+
+  100%{
+
+    transform: translateX(-240px);
+
+  }
+
+
+
+}
+
+.returnmain{
+
+
+  width: 280px;
+  height: 50px;
+  background-color: blue;
+  position: fixed;
+  top: 20%;
+  left: 0%;
+  z-index: 1;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 2rem;
+  border-top-left-radius: 0%;
+  border-bottom-left-radius: 0%;
+  color: whitesmoke;
+  background-color: black;
+  border: 4px solid #7c7d81;
+  transform: translateX(-240px);
+  animation-name: bounce;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* animation-delay: 20s; */
+}
+
+
+
+.returnmain:hover{
+
+  transform: translateX(0);
+  animation-name: bounce;
+  animation-duration: 0s;
+  cursor: pointer;
+
+}
+
+.returnmain a {
+
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+
+
+footer{
+
+  background-color: red;
+
+}

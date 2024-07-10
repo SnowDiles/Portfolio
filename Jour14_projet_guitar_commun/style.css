@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Pathway Gothic One", sans-serif;
+}
+body{
+    background-color: rgb(228, 219, 208);
+}
+
+.anim-guitare{
+    background: url(guitare.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 500px;
+    position: absolute;
+    /* transform: rotate(45deg); */
+    right:10%;
+    z-index: -1;
+    animation-name: bascule1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform: scale(0.75) translateY(-50px);
+    filter: blur(5px);
+}
+
+
+@keyframes bascule1 {
+    0%{
+        transform: rotate(0deg) scale(0.75) translateY(-50px);
+    }
+    50%{
+        transform: rotate(-45deg) scale(0.75) translateY(-50px) ;
+    }
+    100%{
+        transform: rotate(0deg) scale(0.75) translateY(-50px)
+    }
+    
+}
+.anim-guitare2{
+    background: url(guitare.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 500px;
+    position: absolute;
+    right:10%;
+    z-index: -2;
+    animation-name: bascule2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    filter: blur(3px);
+
+}
+
+@keyframes bascule2 {
+    0%{
+        transform: rotate(0deg) scale(0.75) translateY(-50px);
+    }
+    50%{
+        transform: rotate(45deg) scale(0.75) translateY(-50px) ;
+    }
+    100%{
+        transform: rotate(0deg) scale(0.75) translateY(-50px)
+    }
+}
+
+.anim-guitare3{
+    background: url(guitare.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 500px;
+    position: absolute;
+    /* transform: rotate(45deg); */
+    left:10%;
+    z-index: -2;
+    animation-name: bascule1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform: scale(0.75) translateY(-50px);
+    filter: blur(5px);
+}
+
+
+.anim-guitare4{
+    background: url(guitare.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 500px;
+    position: absolute;
+    left:10%;
+    z-index: -1;
+    animation-name: bascule2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    filter: blur(3px);
+}
+
+
+section{
+    display: flex;
+    height: 500px;
+    width: 90%;
+    margin: 10px auto;
+}
+
+section p{
+    align-self: center;
+    font-size: 23px;
+}
+section img{
+    height: 500px;
+    width: 600px;
+    padding: 10px;
+}
+
+.descriptionfestival, .descriptionfestival2{
+    align-self: center;
+    }
+    
+    .descriptionfestival, .descriptionfestival2 p{
+        color: #a80000;
+        text-shadow: rgb(162, 64, 64) 1px 0 10px;
+}
+.descriptionfestival2{
+    margin-left: 10px;
+}
+
+
+.imageconcrt3{
+    width: 100%;
+    height: 500px;
+}
+
+.background-img a {
+
+    position: absolute;
+    justify-self: center;
+/* align-self: center; */
+}
+
+ .boutonprogrammation{
+    background-color: #731010;
+    border-style: none;
+    height: 150px;
+    width: 400px;
+    border-radius: 70px;
+    font-weight: 700;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+ }
+
+ .boutonprogrammation:hover{
+    transform: scale(1.2);
+    background-color: #1f1f1f;
+    transition-duration: 0.5s;
+    box-shadow: 6px 6px 12px 12px #a80000;
+ }
+
+
+
+ .background-img{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    background: url(concert3.jpg);
+    border-radius: 15px;
+    box-shadow: 12px 12px 2px 1px #a80000;
+    background-size: cover;
+    background-position: center;
+    margin: 0px auto;
+ }
+
+.imageconcert1, .imageconcert2{
+    border-radius: 15px;
+}
+
+ .navbar{
+
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    background-color: #1f1f1f;
+    
+}
+
+.navli ul{
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    padding-top: 3px;
+    font-size: 50px;
+    text-shadow: red 2px 5px;
+    /* padding-left: 400px;  */
+    margin-top: 30px;
+}
+
+.navli ul li {
+    display: inline-block;
+}
+
+.navbar a{
+
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+  
+}
+
+.navbar li:hover{
+
+    transform: scale(1.1);
+}
+
+.navbar{
+    display: flex;
+}
+
+
+.navbar img{
+
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+@media screen and (max-width:800px){
+
+    .navbar ul{
+
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width:700px){
+
+    .navbar ul{
+
+        transform: scale(0.7);
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .navbar ul{
+
+        transform: scale(0.6);
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-left: -80px;
+    }
+
+    .navbar{
+
+        max-width: 100%;
+        height: 160px;
+    }
+}
+
+@media screen and (max-width:500px){
+
+    .navbar ul{
+
+        transform: scale(0.5);
+
+    }
+}
+
+.liprog{
+
+    color:rgb(225, 23, 23);
+    text-shadow: rgb(255, 255, 255) 2px 5px;
+    padding-right: 10px;
+    border-radius: 2rem;
+    padding-bottom: 5px;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px){
+    .imageconcert1, .imageconcert2{
+        height: 400px;
+        width: 400px;
+        transform: scale(0.8);
+
+    }
+
+    .background-img{
+        width: 100%;
+    }
+    body{
+        display: block;
+        /* align-items: center; */
+        justify-content: center;
+        flex-direction: column;
+    }
+    .descriptionfestival2 p, .descriptionfestival p{
+        height: 400px;
+        font-size: 15px;
+    }
+
+}
+
+footer{
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: #1f1f1f;
+    margin-bottom:  0;
+    font-size: 20px;
+    text-decoration: none;
+    padding-top: 10px;
+    height: 50px;
+}
+
+footer ul{
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-shadow: red 1px 3px;
+    display: flex;
+    justify-content:  space-around;
+    margin-left: 150px;
+}
+
+footer li{
+
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+footer h3{
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-shadow: red 1px 3px;
+
+
+}
+
+footer a {
+
+    color: white;
+}

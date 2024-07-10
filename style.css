@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #5b5c60;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(211, 209, 209);
+}
+
+/* FINALEMENT JE l'utilise pas celui la */
+/* @keyframes borderbreath {
+  0% {
+    box-shadow: 10px 9px 31px 3px yellowgreen;
+  }
+
+  25% {
+    box-shadow: 10px 9px 31px 10px yellowgreen;
+  }
+
+  50% {
+    box-shadow: 10px 9px 31px 15px yellowgreen;
+  }
+
+  75% {
+    box-shadow: 10px 9px 31px 10px yellowgreen;
+  }
+
+  100% {
+    box-shadow: 10px 9px 31px 3px yellowgreen;
+  }
+} */
+
+@keyframes borderaround {
+  0% {
+    box-shadow: 5px 0px 10px 0px yellowgreen;
+  }
+
+  25% {
+    box-shadow: 0px 5px 10px 0px yellowgreen;
+  }
+
+  50% {
+    box-shadow: -5px 0px 10px 0px yellowgreen;
+  }
+
+  75% {
+    box-shadow: 0px -5px 10px 0px yellowgreen;
+  }
+
+  100% {
+    box-shadow: 5px 0px 10px 0px yellowgreen;
+  }
+}
+
+.maincontainer {
+  max-width: 960px;
+  margin: auto;
+  width: 100%;
+  border: 2px solid #7c7d81;
+  background-color: rgb(0, 0, 0);
+  border-radius: 2rem;
+  box-shadow: 10px 9px 31px 5px gray;
+  margin-top: 20vh;
+  min-height: 58vh;
+}
+
+.maincontainer:hover {
+  transform: scale(1.007);
+  animation-name: borderaround;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.maincontainer:hover .project h2 {
+  color: yellowgreen;
+  transition: all 1s linear;
+  transform: scale(1.02);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.header img {
+  margin-right: 30px;
+}
+
+.header .imgli:hover {
+  transform: scale(130%);
+  cursor: pointer;
+}
+
+.header .imgli:active {
+  transform: rotate(-340deg);
+}
+
+li {
+  list-style-type: none;
+  text-decoration: underline;
+  margin-top: 13px;
+  font-size: 17px;
+  margin-right: 40px;
+  font-weight: 200px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+header li:hover {
+  cursor: pointer;
+}
+
+.bodyofmain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.presentation {
+  max-width: 50%;
+  text-align: center;
+  transform: translateX(-10%);
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scaleX(1.1) scaleY(1) scaleZ(1) translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: 0;
+  }
+}
+
+.presentation h1 {
+  font-size: 90px;
+  /* font-weight: lighter; */
+  font-weight: 250;
+  margin: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.presentation p {
+  text-align: start;
+}
+
+.textpre:hover p {
+  transform: scale(1.01);
+}
+
+.project {
+  transform: translate(-10%);
+}
+
+footer {
+  display: flex;
+
+  justify-content: end;
+
+  margin-right: 50px;
+  transform: translateY(40px);
+}
+
+footer:hover {
+  transition: all 2s linear;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(211, 209, 209);
+}
